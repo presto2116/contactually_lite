@@ -53,4 +53,5 @@ group :development, :test do
   #added by Preston
   gem 'pry-rails'
   gem 'better_errors'
+  gem 'rails_12factor', group: :production
 end
