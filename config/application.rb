@@ -22,5 +22,7 @@ module ContactuallyLite
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    #added by Preston, include react helpers
+    config.react.addons = true
   end
 end

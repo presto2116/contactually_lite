@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  resources :clients
+  resources :clients do
+    collection do
+      get 'remove_all'
+      post :import
+    end
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
